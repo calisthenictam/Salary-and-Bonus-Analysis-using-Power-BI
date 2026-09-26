@@ -1,4 +1,4 @@
-# Sales & Bonus Analysis Dashboard | Power BI
+# Salary & Bonus Analysis Dashboard | Power BI
 
 ## Project Overview
 
