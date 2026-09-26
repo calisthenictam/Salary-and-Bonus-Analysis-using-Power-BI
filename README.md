@@ -1,94 +1,65 @@
-# Salary & Bonus Analysis Dashboard | Power BI
+# 💰 Salary & Bonus Analysis Dashboard | Power BI
 
-## Project Overview
+![Dashboard Preview](https://github.com/calisthenictam/C-B-Analytics-Bonus-Analysis-Dashboard/blob/main/Sales%20and%20Bonus%20Analysis%20Dashboard.png)
 
-This project focuses on analysing employee salary and bonus data to understand compensation patterns across departments, job roles, business units, locations, and employee demographics.
+This project analyses employee salary and bonus data to understand compensation patterns across departments, job roles, business units, locations, and employee demographics. It transforms a raw **Excel/CSV employee dataset** of **500 employee records** into an interactive **Power BI dashboard**, making compensation trends easier to explore than in a traditional spreadsheet. The dataset includes job title, department, business unit, gender, ethnicity, age, hire date, annual salary, bonus percentage, country, city, and exit date.
 
-The main goal was to transform a raw **Excel/CSV employee dataset** into an interactive Power BI dashboard that makes compensation data easier to analyse and helps identify patterns that would be difficult to see in a traditional spreadsheet.
+## 🎯 Problem I Solved
 
-The dataset contains **500 employee records** with information such as job title, department, business unit, gender, ethnicity, age, hire date, annual salary, bonus percentage, country, city, and exit date.
+The original data was locked in a spreadsheet, making it difficult to quickly analyse compensation across different areas of the organization. This project was designed to answer:
 
-## Problem I Solved
+- Which departments have the highest average salaries?
+- How are bonuses distributed across different job roles?
+- Which business units have higher compensation levels?
+- How does salary vary by location and employee characteristics?
+- Which roles have higher average bonus percentages?
+- What overall compensation patterns can be identified?
 
-The original data was available as a spreadsheet, making it difficult to quickly analyse compensation across different areas of the organization.
+Instead of manually reviewing individual rows in Excel, I built a centralized, interactive dashboard where users can filter and explore the data efficiently.
 
-The project was designed to answer questions such as:
+## 🛠️ Technical Stack & Tools
 
-* Which departments have the highest average salaries?
-* How are bonuses distributed across different job roles?
-* Which business units have higher compensation levels?
-* How does salary vary by location and employee characteristics?
-* Which roles have higher average bonus percentages?
-* What overall compensation patterns can be identified?
+- **Data Source:** Excel/CSV employee dataset
+- **Initial Inspection:** Microsoft Excel
+- **Data Preparation:** Power Query
+- **Modelling & Measures:** DAX
+- **Visualization:** Power BI
 
-Instead of manually reviewing individual rows in Excel, I created a centralized and interactive dashboard where users can filter and explore the data more efficiently.
+## 💻 Data Preparation & Analysis
 
-## Data Preparation & Analysis
+This project was executed as an end-to-end workflow, from raw data to a fully interactive dashboard.
 
-I started with the raw employee data in **Excel/CSV** and used Excel for initial data inspection and validation.
+### 1. Data Cleaning & Preparation (Power Query)
+- **Standardization:** Cleaned and standardized data types and categories across all fields.
+- **Missing Values:** Checked and handled missing/null values throughout the dataset.
+- **Field Preparation:** Prepared salary and bonus fields and transformed date fields (hire date, exit date) for accurate reporting.
+- **Structuring:** Organized the data into a model suitable for reporting and visualization.
 
-The dataset was then prepared using **Power Query**, where I:
+### 2. Dashboard Development (Power BI & DAX)
+- **Calculated Measures:** Built DAX measures and KPIs for total and average salary, average bonus percentage, and comparative metrics.
+- **Interactive Filters:** Added filters for department, job title, business unit, location, and other dimensions, allowing users to drill into specific segments on demand.
 
-* Cleaned and transformed the raw data
-* Standardized data types and categories
-* Checked and handled missing values
-* Prepared salary and bonus fields for analysis
-* Transformed date fields
-* Structured the data for reporting and visualization
+## 📈 Business Outcome & Key Findings
 
-I also used **Python for exploratory data analysis and data validation**, helping me understand salary and bonus distributions and identify useful patterns before developing the dashboard.
+The dashboard consolidates hundreds of employee records into clear, filterable views, ready for direct use by HR and leadership teams.
 
-## Power BI Dashboard
+| Analysis Area | What It Shows | Business Use |
+|---|---|---|
+| **Salary by Department** | Average/total salary across departments | Identify high-cost vs. lean departments |
+| **Salary by Job Title** | Compensation spread by role | Benchmark roles against market/internal equity |
+| **Bonus Distribution** | Bonus % across roles and units | Spot inconsistent or outlier bonus practices |
+| **Business Unit Comparison** | Compensation levels by unit | Support budget planning across units |
+| **Geographic Distribution** | Salary variance by country/city | Inform location-based pay strategy |
+| **Demographic Insights** | Salary/bonus by gender, age, ethnicity | Support pay equity review |
 
-After preparing the data, I used **Power BI** to build the interactive dashboard.
+- **Insight Example:** *The dashboard makes it possible to instantly compare average bonus percentage by job title, surfacing roles that are consistently over- or under-rewarded relative to peers.*
 
-The dashboard provides analysis of:
+## 🔗 Repository Contents
 
-* Total and average salary
-* Average bonus percentage
-* Salary by department
-* Salary by job title
-* Bonus distribution
-* Compensation by business unit
-* Geographic distribution
-* Employee and demographic insights
-
-I used **DAX** to create calculated measures and KPIs, while interactive filters allow users to explore specific departments, roles, business units, locations, and other dimensions.
-
-## Tools & Technologies
-
-* **Microsoft Excel** – Initial data source, inspection and validation
-* **Power Query** – Data cleaning, transformation and preparation
-* **Python** – Exploratory data analysis and validation
-* **Power BI** – Data modelling, visualization and dashboard development
-* **DAX** – Calculated measures and KPIs
-* **Data Visualization** – Interactive charts, KPIs and filters
-
-## Key Outcome
-
-The final dashboard transforms a raw employee spreadsheet into an interactive **Sales & Bonus Analysis** tool.
-
-Instead of manually reviewing hundreds of employee records, users can quickly identify salary and bonus patterns across departments, job roles, business units and locations.
-
-This project demonstrates an end-to-end analytics workflow:
-
-**Excel/CSV → Data Cleaning → Power Query → Python Analysis → Data Modelling → DAX → Power BI Dashboard → Business Insights**
+- `Sales And Bonus Analysis using powr-Bi.pbit` — The complete Power BI template file with data model, DAX measures, and dashboard visuals.
+- `Sales and Bonus Analysis Dashboard.png` — Static preview image of the finished dashboard.
+- `employee_data.csv` — The raw employee dataset used to build the analysis.
 
 ## Skills Demonstrated
 
-* Data Cleaning & Transformation
-* Exploratory Data Analysis
-* Excel
-* Power Query
-* Python
-* Power BI
-* DAX
-* Data Modelling
-* Data Visualization
-* Business & HR Analytics
-* Dashboard Development
-
-## Dashboard Preview
-
-Show what the dashboard looks like. - ![Alt text](https://github.com/username/repo/assets/image.png)
-Example: ![Dashboard Preview](https://github.com/calisthenictam/C-B-Analytics-Bonus-Analysis-Dashboard/blob/main/Sales%20and%20Bonus%20Analysis%20Dashboard.png)
+Data Cleaning & Transformation · Excel · Power Query · Power BI · DAX · Data Modelling · Data Visualization · Business & HR Analytics · Dashboard Development
